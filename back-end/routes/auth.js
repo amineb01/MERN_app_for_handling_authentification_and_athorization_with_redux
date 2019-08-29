@@ -21,7 +21,6 @@ const _ = require('lodash');
     let result = _.pick(account, ['_id', 'email' ]);
     result.token = token;
     result.expiresIn = 60;
-    console.log(result);
     return res.status(200).send({ result: result, is_successful:true })
   })
 
